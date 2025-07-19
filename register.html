@@ -1,0 +1,39 @@
+<div class="auth-container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="registerName">Full Name</label>
+        <input type="text" id="registerName" required>
+      </div>
+      <div class="form-group">
+        <label for="registerEmail">Email</label>
+        <input type="email" id="registerEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" required>
+      </div>
+      <div class="form-group">
+        <label for="userType">I want to:</label>
+        <select id="userType" required>
+          <option value="">Select option</option>
+          <option value="donor">Donate Food</option>
+          <option value="recipient">Request Food</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <p>Already have an account? <a href="signin.html">Sign In</a></p>
+  </div>
+  
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('registerEmail').value;
+      const password = document.getElementById('registerPassword').value;
+      const name = document.getElementById('registerName').value;
+      const role = document.getElementById('userType').value;
+      
+      signUp(email, password, name, role);
+    });
+  </script>

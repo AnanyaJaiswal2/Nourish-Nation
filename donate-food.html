@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food - Nourish Nation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-utensils"></i></span>
+                <h1>Nourish Nation</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="donate-food.html" class="active">Donate Food</a></li>
+                    <li><a href="request-food.html">Request Food</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="signin.html" class="btn">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="donate-hero">
+        <div class="container">
+            <h1>Donate Your Surplus Food</h1>
+            <p>Turn your excess food into meals for those in need</p>
+            <a href="#donate-form" class="btn btn-primary">Donate Now</a>
+        </div>
+    </section>
+
+    <section class="donation-guidelines">
+        <div class="container">
+            <h2 class="section-title">What You Can Donate</h2>
+            <div class="guidelines-grid">
+                <div class="guideline-card">
+                    <i class="fas fa-bread-slice"></i>
+                    <h3>Packaged Foods</h3>
+                    <p>Unopened, non-perishable items with valid expiration dates</p>
+                </div>
+                <div class="guideline-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Fresh Produce</h3>
+                    <p>Fruits and vegetables that are still fresh and edible</p>
+                </div>
+                <div class="guideline-card">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <h3>Prepared Foods</h3>
+                    <p>Recently cooked meals properly stored and labeled</p>
+                </div>
+                <div class="guideline-card">
+                    <i class="fas fa-wine-bottle"></i>
+                    <h3>Beverages</h3>
+                    <p>Unopened drinks and bottled water</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate-form" class="donation-form">
+        <div class="container">
+            <h2 class="section-title">Food Donation Form</h2>
+            <form class="donation-form-container">
+                <div class="form-group">
+                    <label for="donor-name">Your Name</label>
+                    <input type="text" id="donor-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="donor-email">Email Address</label>
+                    <input type="email" id="donor-email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="donor-phone">Phone Number</label>
+                    <input type="tel" id="donor-phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="food-type">Type of Food</label>
+                    <select id="food-type" required>
+                        <option value="">Select food type</option>
+                        <option value="packaged">Packaged Foods</option>
+                        <option value="produce">Fresh Produce</option>
+                        <option value="prepared">Prepared Foods</option>
+                        <option value="beverages">Beverages</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="food-quantity">Quantity</label>
+                    <input type="text" id="food-quantity" placeholder="e.g., 5 kg, 10 packages" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date (if applicable)</label>
+                    <input type="date" id="expiry-date">
+                </div>
+                
+                <div class="form-group">
+                    <label for="pickup-address">Pickup Address</label>
+                    <textarea id="pickup-address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pickup-time">Preferred Pickup Time</label>
+                    <input type="datetime-local" id="pickup-time" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-notes">Special Notes</label>
+                    <textarea id="special-notes" rows="3" placeholder="Any special handling instructions"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit Donation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Nourish Nation</h3>
+                <p>Connecting surplus food with those who need it most to reduce waste and fight hunger.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Food Safety Guidelines</a></li>
+                    <li><a href="#">Donation Tips</a></li>
+                    <li><a href="#">Volunteer Opportunities</a></li>
+                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contact@nourishnation.org</li>
+                    <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Food Drive, City, Country</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Nourish Nation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
