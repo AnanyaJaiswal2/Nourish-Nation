@@ -1,6 +1,6 @@
 # 🥗 Nourish Nation
 
-**Nourish Nation** is a food donation platform built to reduce food wastage by connecting organizations with surplus food to those who need it most.
+"Nourish Nation" is a food donation platform built to reduce food wastage by connecting organizations with surplus food to those who need it most.
 
 ## 🎯 Key Features
 - Register and post about leftover food
