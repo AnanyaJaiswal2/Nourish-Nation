@@ -16,3 +16,9 @@ HTML | CSS | JavaScript | Node.js | Firebase | Google Maps API
 
 ## 💡 Inspiration
 Every plate counts. Let's nourish the nation.
+
+## 👥 Team Members
+
+- Sanjna Chahar
+- Ananya Jaiswal
+- Mehak Tanwani
